@@ -20,3 +20,9 @@ Game::~Game () {
 void Game::Start () {
     std::cout << "Game started" << std::endl;
 }
+
+
+int Game::getMove (char player) {
+    std::cout << "Player " << player << " move" << std::endl;
+    return 0;
+}
