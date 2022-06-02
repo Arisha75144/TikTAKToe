@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "Game.hpp"
+#include "Player.hpp"
 
 
 Game::Game () {
@@ -19,10 +20,33 @@ Game::~Game () {
 
 void Game::Start () {
     std::cout << "Game started" << std::endl;
+    std::string name = InputUserName ();
+
+    auto db = LoadDataBase ();
+    Player player1 = FindPlayer (db, name);
+    Palyer player2; // Constructor is not defined
+
+// Repeating the game until the user quits
+    while (is_playing ()) {
+        bool player_type = GetOpponentType ();
+        SetSecondPlayer (player_type);
+
+        if (player_type) {
+            player2.Name = "Computer";
+        } else {
+            player2.Name = InputUserName ();
+        }
+
+        Loop ();
+
+        IsPlayAgain ();
+// End of the Game
+    }
+
 }
 
 
-int Game::getMove (char player) {
-    std::cout << "Player " << player << " move" << std::endl;
-    return 0;
+std::string Game::InputUserName () {
+    std::cout << "Enter User name running and returns a string Dmitry" << std::endl;
+    return std::string ("Dmitry");
 }

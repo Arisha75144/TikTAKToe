@@ -10,7 +10,6 @@
 
 int main () {
 
-    //Show logo ?
     Game game;
     game.Start ();
 

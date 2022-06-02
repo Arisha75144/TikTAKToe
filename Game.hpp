@@ -10,17 +10,13 @@ class Game {
 public:
     Game (); // default constructor
     ~Game (); // destructor
-    void displayBoard (); //displays our board
-    int getMove (char player); //asks the user for his move
 
 
     void Start (); // Game entry point
 private:
-    const int MaxMoves = 9;
-    int *Array; // array of cells
-    bool checkForWins (char player); //check wins
-    bool checkForDraw (); //check request limits
+    bool is_playing_; // flag to check if the game is still running
 
+    std::string InputUserName (); // function to get user name
 
 };
 
