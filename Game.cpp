@@ -6,7 +6,7 @@
 #include "Game.hpp"
 #include "Player.hpp"
 
-
+//TODO: Fix the code below
 Game::Game () {
 
     std::cout << "class Game constructor is running" << std::endl;
