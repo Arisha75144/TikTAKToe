@@ -1,12 +1,14 @@
 # Project Structure.
 
-## 1. Run the Game.
+## 1. Run the Game. ( `./main.sh` -> main() -> game.start() )
 
-## 2. Set Username.
+## 2. Set Username. ( InputUserName )
 
-## 3. Select opponent.
+## 2a. Load DB. ( LoadDB -> GetUser )
 
-### 3.1. Select name for an opponent.
+## 3. Select opponent. ( switch Human vs AI )
+
+### 3.1. Select name for an opponent. ( Done )
 
 ## 4. Play.
 
